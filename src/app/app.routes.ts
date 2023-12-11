@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AboutComponent } from './about/about.component';
 import { CharacterComponent } from './character/character.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
     {
@@ -20,5 +21,18 @@ export const routes: Routes = [
     {
         path: 'about',
         component: AboutComponent
+    },
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: '404',
+        component: NotFoundComponent
+    },
+    {
+        path: '**',
+        redirectTo: '404'
     }
 ];
