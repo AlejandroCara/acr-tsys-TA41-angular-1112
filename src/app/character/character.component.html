@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="card text-bg-dark">
+            <div class="card-body">
+              <h2>{{character.name}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card text-bg-dark">
+            <div class="card-body">
+                <img src="{{character.image}}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card text-bg-dark" id="header">
+            <div class="card-body">
+                Status : {{character.status}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card text-bg-dark info">
+            <div class="card-body">
+                Species : {{character.species}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card text-bg-dark">
+            <div class="card-body">
+                Gender : {{character.gender}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card text-bg-dark">
+            <div class="card-body">
+                Origin : {{character.origin.name}}
+            </div>
+        </div>
+    </div>
+</div>

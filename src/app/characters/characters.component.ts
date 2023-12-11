@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { RickapiService } from '../rickapi.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-characters',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './characters.component.html',
   styleUrl: './characters.component.css'
 })
