@@ -12,7 +12,7 @@ import { RickapiService } from './rickapi.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
-  title = 'TA40';
+  title = 'TA41';
 
   characters: any = null;
 
